@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../LAB/Planets"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Git"
+	}
+}

@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    position: relative;
+    background: url('Bilder/Hero Image.webp') no-repeat center center/cover;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+
+}
+
+.highlight {
+    font-weight: 300; /* Makes the text light */
+    text-decoration: underline; /* Adds underline */
+    text-decoration-color: orange; /* Makes the underline orange */
+}
+.logo img {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* This will maintain the aspect ratio */
+}
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.balance {
+    font-size: 1rem;
+}
+
+.menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header .overlay {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+.register-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #F29509;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.games-section {
+    text-align: left;
+}
+
+.games-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.games-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.game-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #F29509;
+}
+
+.game-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.game-info {
+    padding: 10px;
+}
+
+.game-info h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+.game-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.game-info ul li {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #F29509;
+    padding: 20px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.bullet-list {
+    list-style-type: disc !important;
+}

@@ -1,0 +1,68 @@
+*{margin: 0;
+padding: 0;}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav main main"
+        "footer footer footer";
+    grid-template-columns: 2fr 1fr 1fr; /* Ändert die Größe der Spalten */
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body.dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+header {
+    grid-area: header;
+    /* Ihr Header-Styling */
+}
+
+nav {
+    grid-area: nav;
+    /* Ihr Navigations-Styling */
+}
+
+main {
+    grid-area: main;
+    /* Ihr Hauptinhalt-Styling */
+}
+
+footer {
+    grid-area: footer;
+    /* Ihr Footer-Styling */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Verhindert das Umbruch der Elemente */
+    background-color: #f2f2f2; /* Setzt den Hintergrund auf ein leichtes Grau */
+    height: 50px; /* Setzt die Höhe der Navigationsleiste */
+    max-height: 50px; /* Begrenzt die maximale Höhe der Navigationsleiste */
+
+}
+
+.nav-left, .nav-right {
+    flex: 1;
+    text-align: center;
+}
+
+nav img {
+    height: 30px; /* Setzt die Höhe automatisch basierend auf der Breite, um das Seitenverhältnis zu erhalten */
+}
+
+
+div:first-child {
+    font-weight: normal; /* Setzt die Schriftart auf regulär */
+    font-size: 24px; /* Setzt die Schriftgröße auf 24 Pixel */
+}
+
+div:nth-child(2) {
+    font-size: 12px; /* Setzt die Schriftgröße auf 12 Pixel */
+}
